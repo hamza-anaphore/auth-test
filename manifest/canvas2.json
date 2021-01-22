@@ -1,0 +1,44 @@
+{
+    "@context": "http://iiif.io/api/image/2/context.json", 
+    "@id": "https://iiifauth.digtest.co.uk/img/01_Icarus_Breughel.jpg", 
+    "height": 3393, 
+    "profile": [
+      "http://iiif.io/api/image/2/level2.json"
+    ], 
+    "protocol": "http://iiif.io/api/image", 
+    "service": {
+      "@context": "http://iiif.io/api/auth/1/context.json", 
+      "@id": "https://iiifauth.digtest.co.uk/auth/cookie/login/01_Icarus_Breughel.jpg", 
+      "confirmLabel": "Login", 
+      "description": "Example Institution requires that you log in with your example account to view this content.", 
+      "failureDescription": "<a href=\"http://example.org/policy\">Access Policy</a>", 
+      "failureHeader": "Authentication Failed", 
+      "header": "Please Log In", 
+      "label": "Login to Example Institution", 
+      "profile": "http://iiif.io/api/auth/1/login", 
+      "service": [
+        {
+          "@id": "https://iiifauth.digtest.co.uk/auth/token/login/01_Icarus_Breughel.jpg", 
+          "profile": "http://iiif.io/api/auth/1/token"
+        }, 
+        {
+          "@id": "https://iiifauth.digtest.co.uk/auth/logout/login/01_Icarus_Breughel.jpg", 
+          "label": "log out", 
+          "profile": "http://iiif.io/api/auth/1/logout"
+        }
+      ]
+    }, 
+    "tiles": [
+      {
+        "scaleFactors": [
+          1, 
+          2, 
+          4, 
+          8, 
+          16
+        ], 
+        "width": 256
+      }
+    ], 
+    "width": 5200
+  }

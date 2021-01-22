@@ -1,0 +1,47 @@
+{
+  "@context": "http://iiif.io/api/image/2/context.json", 
+  "@id": "https://iiifauth.digtest.co.uk/img/11_kitty_joyner_degraded.jpg", 
+  "height": 3000, 
+  "profile": [
+    "http://iiif.io/api/image/2/level2.json", 
+    {
+      "maxWidth": 512
+    }
+  ], 
+  "protocol": "http://iiif.io/api/image", 
+  "service": {
+    "@context": "http://iiif.io/api/auth/1/context.json", 
+    "@id": "https://iiifauth.digtest.co.uk/auth/cookie/login/11_kitty_joyner.jpg", 
+    "confirmLabel": "Login", 
+    "description": "Example Institution requires that you log in with your example account to view the full-quality content.", 
+    "failureDescription": "You will only be able to zoom in, but not download hi res versions.", 
+    "failureHeader": "Zoom only", 
+    "header": "Please Log In", 
+    "label": "Login to Example Institution to access hi res downloads", 
+    "profile": "http://iiif.io/api/auth/1/login", 
+    "service": [
+      {
+        "@id": "https://iiifauth.digtest.co.uk/auth/token/login/11_kitty_joyner.jpg", 
+        "profile": "http://iiif.io/api/auth/1/token"
+      }, 
+      {
+        "@id": "https://iiifauth.digtest.co.uk/auth/logout/login/11_kitty_joyner.jpg", 
+        "label": "log out", 
+        "profile": "http://iiif.io/api/auth/1/logout"
+      }
+    ]
+  }, 
+  "tiles": [
+    {
+      "scaleFactors": [
+        1, 
+        2, 
+        4, 
+        8, 
+        16
+      ], 
+      "width": 256
+    }
+  ], 
+  "width": 2400
+}
